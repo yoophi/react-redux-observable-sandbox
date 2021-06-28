@@ -1,7 +1,7 @@
 import React from "react";
-import { selectPing, ping, pong  } from "./pingSlice";
+import { selectPing, ping, pong } from "./pingSlice";
 import { useSelector, useDispatch } from "react-redux";
-import styles from './Ping.module.css';
+import styles from "./Ping.module.css";
 
 export const Ping = () => {
   const isPinging = useSelector(selectPing);
@@ -10,13 +10,11 @@ export const Ping = () => {
   return (
     <div>
       <div>
-		  <span className={styles.value}>
-			  {isPinging ? "PING" : "PONG"}
-			  </span>
-			  </div>
+        <span className={styles.value}>{isPinging ? "PING" : "PONG"}</span>
+      </div>
       <div>
         <button
-		className={styles.button}
+          className={styles.button}
           onClick={() => {
             dispatch(ping());
           }}
@@ -24,7 +22,7 @@ export const Ping = () => {
           PING
         </button>
         <button
-		className={styles.button}
+          className={styles.button}
           onClick={() => {
             dispatch(pong());
           }}
