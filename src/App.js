@@ -1,6 +1,7 @@
 import React from 'react';
 import { Counter } from './features/counter/Counter';
 import { Ping } from './features/ping/Ping';
+import { GithubUser } from './features/github/GithubUser';
 import './App.css';
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
         <Counter />
         <hr />
         <Ping />
+        <hr />
+        <GithubUser />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

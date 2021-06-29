@@ -29,11 +29,6 @@ export const githubSlice = createSlice({
   },
 });
 
-export const {
-  fetchUserRequest,
-  fetchUserSuccess,
-  fetchUserError,
-  fetchUserCancelled,
-} = githubSlice.actions;
+export const { fetchUserRequest, fetchUserSuccess, fetchUserError, fetchUserCancelled, } = githubSlice.actions;
 
 export default githubSlice.reducer;
